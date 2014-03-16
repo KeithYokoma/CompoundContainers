@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CompoundRelativeLayout">
+        <attr name="checked" format="boolean|reference"/>
+    </declare-styleable>
+    <declare-styleable name="CompoundFrameLayout">
+        <attr name="checked" format="boolean|reference"/>
+    </declare-styleable>
+    <declare-styleable name="CompoundGridLayout">
+        <attr name="checked" format="boolean|reference"/>
+    </declare-styleable>
+    <declare-styleable name="CompoundLinearLayout">
+        <attr name="checked" format="boolean|reference"/>
+    </declare-styleable>
+</resources>
