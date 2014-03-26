@@ -42,7 +42,7 @@ public class CompoundGridLayout extends GridLayout implements Checkable, Compoun
         TypedArray a = null;
         try {
             a = context.obtainStyledAttributes(attrs, R.styleable.CompoundGridLayout, defStyle, 0);
-            boolean checked = a.getBoolean(R.styleable.CompoundGridLayout_checked, false);
+            boolean checked = a.getBoolean(R.styleable.CompoundGridLayout_defaultChecked, false);
             setChecked(checked);
         } finally {
             if (a != null) {

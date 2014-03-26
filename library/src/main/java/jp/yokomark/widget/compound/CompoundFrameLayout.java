@@ -42,7 +42,7 @@ public class CompoundFrameLayout extends FrameLayout implements Checkable, Compo
         TypedArray a = null;
         try {
             a = context.obtainStyledAttributes(attrs, R.styleable.CompoundFrameLayout, defStyle, 0);
-            boolean checked = a.getBoolean(R.styleable.CompoundFrameLayout_checked, false);
+            boolean checked = a.getBoolean(R.styleable.CompoundFrameLayout_defaultChecked, false);
             setChecked(checked);
         } finally {
             if (a != null) {

@@ -42,7 +42,7 @@ public class CompoundLinearLayout extends LinearLayout implements Checkable, Com
         TypedArray a = null;
         try {
             a = context.obtainStyledAttributes(attrs, R.styleable.CompoundLinearLayout, defStyle, 0);
-            boolean checked = a.getBoolean(R.styleable.CompoundLinearLayout_checked, false);
+            boolean checked = a.getBoolean(R.styleable.CompoundLinearLayout_defaultChecked, false);
             setChecked(checked);
         } finally {
             if (a != null) {

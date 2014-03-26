@@ -42,7 +42,7 @@ public class CompoundRelativeLayout extends RelativeLayout implements Checkable,
         TypedArray a = null;
         try {
             a = context.obtainStyledAttributes(attrs, R.styleable.CompoundRelativeLayout, defStyle, 0);
-            boolean checked = a.getBoolean(R.styleable.CompoundRelativeLayout_checked, false);
+            boolean checked = a.getBoolean(R.styleable.CompoundRelativeLayout_defaultChecked, false);
             setChecked(checked);
         } finally {
             if (a != null) {
