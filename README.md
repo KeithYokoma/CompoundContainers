@@ -1,3 +1,5 @@
+[![Android Gems](http://www.android-gems.com/badge/KeithYokoma/CompoundContainers.svg?branch=master)](http://www.android-gems.com/lib/KeithYokoma/CompoundContainers)
+
 CompoundContainers
 ==================
 
