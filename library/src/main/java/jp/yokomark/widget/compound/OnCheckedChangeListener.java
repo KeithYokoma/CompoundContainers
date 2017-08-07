@@ -5,5 +5,5 @@ package jp.yokomark.widget.compound;
  * @since 2014/03/16
  */
 public interface OnCheckedChangeListener {
-    public void onCheckedChanged(CompoundViewGroup compoundView, boolean isChecked);
+    void onCheckedChanged(CompoundViewGroup compoundView, boolean isChecked);
 }

@@ -117,7 +117,8 @@ public class CompoundRelativeLayout extends RelativeLayout implements Checkable,
         mOnCheckedChangeListener = listener;
     }
 
-    /* package */ void setOnCheckedChangeWidgetListener(OnCheckedChangeListener listener) {
+    @Override
+    public void setOnCheckedChangeWidgetListener(OnCheckedChangeListener listener) {
         mOnCheckedChangeWidgetListener = listener;
     }
 

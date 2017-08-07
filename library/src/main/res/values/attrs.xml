@@ -13,4 +13,14 @@
     <declare-styleable name="CompoundLinearLayout">
         <attr name="defaultChecked"/>
     </declare-styleable>
+    <attr name="radioButtonStyle" format="reference" />
+    <declare-styleable name="RadioGroup2">
+        <!-- The id of the child radio button that should be checked by default
+             within this radio group. -->
+        <attr name="checkedButton" format="integer" />
+        <!-- Should the radio group be a column or a row?  Use "horizontal"
+             for a row, "vertical" for a column.  The default is
+             vertical. -->
+        <attr name="orientation" />
+    </declare-styleable>
 </resources>

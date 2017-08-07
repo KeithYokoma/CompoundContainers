@@ -117,7 +117,8 @@ public class CompoundFrameLayout extends FrameLayout implements Checkable, Compo
         mOnCheckedChangeListener = listener;
     }
 
-    /* package */ void setOnCheckedChangeWidgetListener(OnCheckedChangeListener listener) {
+    @Override
+    public void setOnCheckedChangeWidgetListener(OnCheckedChangeListener listener) {
         mOnCheckedChangeWidgetListener = listener;
     }
 

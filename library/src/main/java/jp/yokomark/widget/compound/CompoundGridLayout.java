@@ -117,7 +117,8 @@ public class CompoundGridLayout extends GridLayout implements Checkable, Compoun
         mOnCheckedChangeListener = listener;
     }
 
-    /* package */ void setOnCheckedChangeWidgetListener(OnCheckedChangeListener listener) {
+    @Override
+    public void setOnCheckedChangeWidgetListener(OnCheckedChangeListener listener) {
         mOnCheckedChangeWidgetListener = listener;
     }
 

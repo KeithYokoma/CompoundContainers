@@ -117,7 +117,8 @@ public class CompoundLinearLayout extends LinearLayout implements Checkable, Com
         mOnCheckedChangeListener = listener;
     }
 
-    /* package */ void setOnCheckedChangeWidgetListener(OnCheckedChangeListener listener) {
+    @Override
+    public void setOnCheckedChangeWidgetListener(OnCheckedChangeListener listener) {
         mOnCheckedChangeWidgetListener = listener;
     }
 
