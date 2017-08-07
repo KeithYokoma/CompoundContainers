@@ -49,7 +49,7 @@ public class RadioGroup2 extends LinearLayout {
 			mCheckedId = value;
 		}
 
-		final int index = attributes.getInt(R.styleable.RadioGroup2_orientation, VERTICAL);
+		final int index = attributes.getInt(R.styleable.RadioGroup2_rg_orientation, VERTICAL);
 		setOrientation(index);
 
 		attributes.recycle();
