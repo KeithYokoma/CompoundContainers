@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
 /**
  * Created by KeishinYokomaku on 2017/08/07.
@@ -195,7 +194,7 @@ public class RadioGroup2 extends LinearLayout {
 	 */
 	@Override
 	protected boolean checkLayoutParams(ViewGroup.LayoutParams p) {
-		return p instanceof RadioGroup.LayoutParams;
+		return p instanceof RadioGroup2.LayoutParams;
 	}
 
 	@Override
@@ -205,7 +204,7 @@ public class RadioGroup2 extends LinearLayout {
 
 	@Override
 	public CharSequence getAccessibilityClassName() {
-		return RadioGroup.class.getName();
+		return RadioGroup2.class.getName();
 	}
 
 	/**
