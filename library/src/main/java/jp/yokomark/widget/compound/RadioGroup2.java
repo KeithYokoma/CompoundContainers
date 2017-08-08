@@ -7,10 +7,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
 
 /**
- * Created by KeishinYokomaku on 2017/08/07.
+ * @author KeithYokoma
  */
 @SuppressWarnings("unused")
 public class RadioGroup2 extends LinearLayout {
@@ -88,8 +87,8 @@ public class RadioGroup2 extends LinearLayout {
 
 	@Override
 	public void addView(View child, int index, ViewGroup.LayoutParams params) {
-		if (child instanceof RadioButton) {
-			final RadioButton button = (RadioButton) child;
+		if (child instanceof CompoundViewGroup) {
+			final CompoundViewGroup button = (CompoundViewGroup) child;
 			if (button.isChecked()) {
 				mProtectFromCheckedChange = true;
 				if (mCheckedId != -1) {
@@ -139,8 +138,8 @@ public class RadioGroup2 extends LinearLayout {
 
 	private void setCheckedStateForView(int viewId, boolean checked) {
 		View checkedView = findViewById(viewId);
-		if (checkedView != null && checkedView instanceof RadioButton) {
-			((RadioButton) checkedView).setChecked(checked);
+		if (checkedView != null && checkedView instanceof CompoundViewGroup) {
+			((CompoundViewGroup) checkedView).setChecked(checked);
 		}
 	}
 

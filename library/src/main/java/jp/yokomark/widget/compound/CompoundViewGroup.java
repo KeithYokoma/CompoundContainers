@@ -9,5 +9,7 @@ import android.support.annotation.IdRes;
  */
 public interface CompoundViewGroup {
 	@IdRes int getId();
+	boolean isChecked();
+	void setChecked(boolean checked);
 	void setOnCheckedChangeWidgetListener(OnCheckedChangeListener listener);
 }
